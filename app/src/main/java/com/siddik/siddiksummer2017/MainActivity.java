@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tv_demo;
     private TextView tv_work;
+    private Button tv_submit;
+    private TextView tv_subshow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private void initialView() {
         tv_demo = (TextView) findViewById(R.id.activity_tool_demo);
         tv_work = (TextView) findViewById(R.id.activity_tool_work);
+//        tv_submit = (Button) findViewById(R.id.activity_tool_submit);
+//        tv_subshow = (TextView) findViewById(R.id.activity_tool_subshow);
 
     }
 
@@ -43,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        tv_submit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                tv_subshow.setText("You can do it!");
+//                getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_fragment,
+//                        workFragment).commit();
+//            }
+//        });
+
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,5 +71,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View v){
         Toast.makeText(MainActivity.this, "You clicked login", Toast.LENGTH_SHORT).show();
+    }
+
+    public void submit(View v){
+        //tv_subshow = (TextView) findViewById(R.id.activity_tool_subshow);
+        Toast toast = Toast.makeText(MainActivity.this, "You can do it", Toast.LENGTH_SHORT);
+        // toast.setView(tv_subshow);
+        toast.show();
     }
 }

@@ -1,13 +1,72 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context="com.siddik.siddiksummer2017.fragment.WorkFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello_work_fragment" />
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:text="This fragment is used for quizzes"
+            ></TextView>
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:layout_centerInParent="true"
+                android:text="Quiz1"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:text="Quiz2"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:text="Quiz3"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/activity_tool_submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="submit"
+            android:text="SUBMIT"
+            android:background="@android:color/holo_blue_light"/>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/activity_tool_subshow"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="You can do it"
+        android:background="@android:color/holo_blue_light"
+
+        ></TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

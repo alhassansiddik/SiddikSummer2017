@@ -1,19 +1,15 @@
 package com.siddik.siddiksummer2017.adapter;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-
 import com.siddik.siddiksummer2017.R;
 
 import java.util.ArrayList;
-
-import static android.R.id.list;
 
 /**
  * Created by Sidleh on 6/14/2017.

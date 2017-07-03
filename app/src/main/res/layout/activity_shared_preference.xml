@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.siddik.siddiksummer2017.SharedPreferenceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Email:"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/activity_sharedpreference_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="10dp"
+            android:hint="Please input yout email"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Password:"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/activity_sharedpreference_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="10dp"
+            android:hint="Please input yout password"
+            android:inputType="textWebPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_sharedpreference_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/activity_sharedpreference_clear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Clear Cache"
+        android:textSize="30sp"
+        android:layout_marginTop="200dp"/>
+
+</LinearLayout>

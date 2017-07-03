@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.siddik.siddiksummer2017.DialogActivity">
+
+    <RadioGroup
+        android:id="@+id/activity_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+
+        <RadioButton
+            android:id="@+id/dia100000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="NormalDialog"/>
+        <RadioButton
+            android:id="@+id/dia200000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="ListDialog"/>
+        <RadioButton
+            android:id="@+id/dia300000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="SingleChoiceDialog"/>
+        <RadioButton
+            android:id="@+id/dia400000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="MultiChoiceDialog"/>
+        <RadioButton
+            android:id="@+id/dia500000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="WaitingDialog"/>
+        <RadioButton
+            android:id="@+id/dia600000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="ProgressDialog"/>
+        <RadioButton
+            android:id="@+id/dia700000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="InputDialog"/>
+        <RadioButton
+            android:id="@+id/dia800000"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="CustomDialog"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/activity_radio_group_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="OK"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
